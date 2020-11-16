@@ -1,7 +1,7 @@
 ---
 validate_certs: False
 alias_pattern: "{{ config.name }}"
-host_filters: "{{ guest.gueststate == 'running' }},{{ config.guestid == 'windows9Server64Guest' }}"
+host_filters: "{{ guest.gueststate == 'running' }},{{ config.guestid == 'windowsGuest' }}"
 groupby_patterns: "{{ guest.guestid }}"
 properties:
   prop01: "config.name"
