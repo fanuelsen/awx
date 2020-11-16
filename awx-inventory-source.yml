@@ -1,0 +1,13 @@
+---
+validate_certs: False
+alias_pattern: "{{ config.name }}"
+host_filters: "{{ guest.gueststate == 'running' }},{{ config.guestid == 'windows9Server64Guest' }}"
+groupby_patterns: "{{ guest.guestid }}"
+properties:
+  prop01: "config.name"
+  prop02: "guest.hostName"
+  prop03: "guest.ipAddress"
+  prop04: "guest.guestId"
+  prop05: "guest.guestState"
+  prop06: "guest.guestFamily"
+  prop07: "config.annotation"
