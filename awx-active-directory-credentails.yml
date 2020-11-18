@@ -1,4 +1,4 @@
-input configuration
+#input configuration
 ---
 fields:
   - id: username
@@ -12,7 +12,7 @@ required:
   - username
   - password
 
-injector configuration
+#injector configuration
 ---
 extra_vars:
   ADjoin_password: '{{ password }}'
