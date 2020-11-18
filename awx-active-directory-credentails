@@ -1,0 +1,17 @@
+input configuration
+fields:
+  - id: username
+    type: string
+    label: Active Directory username
+  - id: password
+    type: string
+    label: Active Directory password
+    secret: true
+required:
+  - username
+  - password
+
+injector configuration
+extra_vars:
+  ADjoin_password: '{{ password }}'
+  ADjoin_username: '{{ username }}'
